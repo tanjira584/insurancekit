@@ -1,0 +1,270 @@
+/*-------------------------
+
+Template Name:Insurance Kit;
+Template URI:http://tanjira584.github.io/insurancekit/;
+Author Name:Tanjir Ahmed;
+Author URI: http://tanjir.com;
+Description:A Insurance Website For Safety Life;
+Licence: 
+Licence URI:
+Verson:1.0;
+
+---------------------------
+
+	1. Typography
+	2. Header
+		2.1 Logo;
+		2.2 Main Menu;
+
+---------------------------*/
+/*-------------------------Common Style----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+/*--------------------------------------------
+            Top Header
+---------------------------------------------*/
+.header-top {
+	background-image: linear-gradient(#ebeef0,#FFFFFF);
+	padding: 20px 0;
+}
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+}
+/*---Header-top-Logo-----*/
+.header-top .logo {
+	margin-left: 16px;
+}
+.header-top .logo h2 {
+	font-size: 34px;
+	text-transform: capitalise;
+}
+.header-top .logo h2 a {
+	color: #000;
+}
+.header-address {
+    display: flex;
+    align-items: center;
+}
+.add-box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 16px;
+}
+.map-address .map-icon,
+.phone-address .phone-icon,
+.opening-time .clock-icon {
+	width: 35px;
+}
+.map-address .map-icon i,
+.phone-address .phone-icon i,
+.opening-time .clock-icon i {
+	font-size: 34px;
+	color: #ed7217;
+}
+.map-address .address,
+.phone-address .phone-number,
+.opening-time .open-time {
+	margin-left: 10px;
+}
+.map-address .address h3,
+.phone-address .phone-number h3,
+.opening-time .open-time h3 {
+	font-size: 17px;
+	margin-bottom: 4px;
+}
+.map-address .address span,
+.phone-address .phone-number span,
+.opening-time .open-time span {
+	font-size: 15px;
+	color: #6f6883;
+}
+/*--------------------------------------------
+            Main Menu
+---------------------------------------------*/
+.header-main {
+    position: relative;
+	background: #000000;
+	padding: 10px 0;
+}
+.header-main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----Mobile logo-----*/
+.main-logo{
+	display: none;
+	margin-left: 16px;
+}
+.main-logo h2{
+	font-size: 34px;
+	text-transform: capitalise;
+}
+.main-logo h2 a {
+	color: #FFF;
+}
+
+/*----------Main Menu------*/
+.main-menu {
+    transition: 0.5s all;
+}
+.main-menu ul {
+	list-style:none;
+}
+.main-menu ul li {
+	display: inline;
+	margin-right: 6px;
+	transition: 0.5s all;
+}
+.main-menu ul li a {
+	text-transform: uppercase;
+	padding: 10px 16px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	transition: 0.5s all;
+}
+.main-menu ul li.active a {
+	color: #ed7217;
+}
+.main-menu ul li:hover a {
+	color: #ed7217;
+}
+
+/*------Social Icons---*/
+.social-bars {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*-----Toggle Btn----*/
+.toggle-btn {
+	display: none;
+	width: 50px;
+	margin-right: 16px;
+	text-align: right;
+}
+.toggle-btn i{
+	color:#FFF;
+	display:inline-block;
+	padding:10px;
+	border:1px solid #FFF;
+}
+/*-----Social Icons------*/
+.social-icons {
+	text-align: right;
+    margin-right: 6px;
+}
+.social-icons ul {
+	list-style: none;
+}
+.social-icons ul li {
+	display: inline;
+	padding: 10px;
+}
+.social-icons ul li i {
+	display: inline-block;
+	padding: 10px 0;
+	color: #FFFFFF;
+}
+.social-icons ul li i:hover {
+	color: #e7e7eb;
+}
+/*--------------------------------------------
+            Main Menu
+---------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------
+                media for 1024px
+----------------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+    /*----Header Top ----*/
+    .header-top {
+        display: none;
+    }
+    /*---Header Main---*/
+    .main-logo {
+        display: block;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    .social-icons {
+        display: none;
+    }
+    /*---Main Menu---*/
+    .main-menu {
+        position: absolute;
+        width: 100%;
+        right: 100%;
+        top: 100%;
+        z-index: 9999;
+        background: green;
+    }
+    .main-menu ul li {
+        display: inherit;
+        margin: 0;
+    }
+    .main-menu ul li a {
+        color: #FFF;
+        padding: 12px 16px;
+    }
+    .main-menu ul li.active {
+        background: #ed7217;
+    }
+    .main-menu ul li.active a {
+        color: #fff;
+    }
+    .main-menu ul li:hover {
+        background: #ed7217;
+    }
+    .main-menu ul li:hover a {
+        color: #fff;
+    }
+    .mobile-menu {
+        right: 0;
+    }
+
+}
+
+
+
+
+/*---------------------------------------------------------------
+                media for 768px
+----------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    h1 {
+        color: green;
+    }
+}
+
+
+/*---------------------------------------------------------------
+                media for 540px
+----------------------------------------------------------------*/
+@media screen and (max-width: 540px) {
+    h1 {
+        color: blue;
+    }
+}
