@@ -183,11 +183,159 @@ a {
 .social-icons ul li i:hover {
 	color: #e7e7eb;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------
-            Main Menu
+            Site Identity
 ---------------------------------------------*/
+.site-identity {
+	padding: 30px 0;
+	background: #262b47;
+}
+.site-identity-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.site-logo {
+	margin: 0 16px ;
+}
+.site-logo h2 {
+	font-size: 34px;
+}
+.site-logo h2 a {
+	color:#FFF;
+}
+.site-icons {
+	margin: 0 16px;
+}
+.site-icons ul {
+	list-style: none;
+}
+.site-icons ul li {
+	display: inline;
+	margin-left: 8px;
+}
+.site-icons ul li i {
+	padding: 10px;
+	color: #FFF;
+}
+/*--------------------------------------------
+            Footer Top
+---------------------------------------------*/
+.footer-top {
+	padding: 30px 0;
+	border-top: 1px solid #f7f7f7;
+	background: #262b47;
+}
+.footer-top-row {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-about {
+	margin-left: 16px;
+}
+.explore-list{
+	margin: 0 8px;
+}
+.company-list{
+	margin: 0 8px;
+}
+.address-list{
+	margin-right: 16px;
+}
 
+.footer-about h3,
+.explore-list h3,
+.company-list h3,
+.address-list h3 {
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	color: #FFF;
+}
+.footer-about p {
+	color: #FFF;
+	line-height: 1.6em;
+	font-size: 15px;
+}
+.explore-list ul,
+.company-list ul,
+.address-list ul {
+	list-style: none;
+}
 
+.company-list ul li,
+.address-list ul li,
+.explore-list ul li {
+	margin: 10px 0;
+}
+.company-list ul li i,
+.address-list ul li i,
+.explore-list ul li i{
+	margin-right: 8px;
+	color: #ed7217;
+}
+.company-list ul li a,
+.address-list ul li a,
+.explore-list ul li a {
+    display: inline;
+	text-transform: capitalize;
+	color: #000;
+	font-size: 15px;
+	padding: 8px 0;
+	color: #FFF;
+}
+
+/*--------------------------------------------
+            Secondary Footer
+---------------------------------------------*/
+.secondary-footer {
+	padding: 20px 0;
+	background: #000;
+}
+.copy-right {
+	text-align: center;
+	margin: 0px 16px;
+}
+.copy-right p {
+	font-size: 14px;
+	color: #919191;
+	color: #FFF;
+	line-height: 1.6em;
+}
+.copy-right p a {
+	text-decoration: none;
+    color: #ed7217;
+}
+.copy-right p i {
+	color: red;
+}
 
 
 
@@ -244,6 +392,24 @@ a {
     .mobile-menu {
         right: 0;
     }
+    /*----Footer Top----*/
+    .footer-top-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-about {
+        margin: 0 16px;
+        margin-bottom: 40px;
+    }
+    .explore-list {
+        margin: 0 16px;
+        margin-bottom: 40px;
+    }
+    .company-list {
+        margin: 0 16px;
+    }
+    .address-list {
+        margin: 0 16px;
+    }
 
 }
 
@@ -254,8 +420,13 @@ a {
                 media for 768px
 ----------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-    h1 {
-        color: green;
+    
+    /*----Footer Top----*/
+    .footer-top-row {
+        grid-template-columns: 1fr;
+    }
+    .company-list {
+        margin-bottom: 40px;
     }
 }
 
@@ -264,7 +435,12 @@ a {
                 media for 540px
 ----------------------------------------------------------------*/
 @media screen and (max-width: 540px) {
-    h1 {
-        color: blue;
+    /*----Site Identity------*/
+    .site-identity-row {
+        display: inherit;
+        text-align: center;
+    }
+    .site-logo h2 {
+        margin-bottom: 16px;
     }
 }
