@@ -576,6 +576,156 @@ a {
     border: 2px solid #ed7217;
 	color:#ed7217;
 }
+/*--------------------------------------------
+            Achievement Section
+---------------------------------------------*/
+.achievement {
+	padding: 100px 0;
+}
+
+.achievement-row {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.achievement .award {
+	margin:0 16px;
+	margin-bottom: 32px;
+	display: flex;
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+.achievement .award .img {
+	width: 32%;
+	padding: 10px;
+	background: #000;
+}
+.achievement .award .img img {
+	width: 100%;
+}
+.achievement .award .content {
+	width: 68%;
+	padding: 10px;
+}
+.achievement .award .content h4 {
+	font-size: 22px;
+	text-transform: capitalize;
+	line-height: 1.4em;
+	margin-bottom: 10px;
+}
+.achievement .award .content p {
+	line-height: 1.6em;
+	color: #787878;
+}
+/*--------------------------------------------
+            Insurance Quote
+---------------------------------------------*/
+.ins-quote {
+	padding: 100px 0;
+	background: #020ec6;
+}
+.ins-quote-row{
+	display: flex;
+}
+
+.ins-quote .section-info {
+    width: 100%;
+	text-align: left;
+}
+.ins-quote .section-info h2 {
+	color: #FFF;
+	margin-bottom: 20px;
+}
+.ins-quote .section-info img {
+	margin-bottom: 20px;
+}
+.ins-quote .section-info p {
+	line-height: 1.6em;
+	color: #FFF;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.ins-quote .section-info p:last-of-type {
+	margin-bottom: 0;
+}
+.ins-quote .section-info p i {
+	margin-right: 8px;
+}
+.quote-form {
+	margin: 0 16px;
+}
+.quote-form form input {
+	display: inline;
+	width: 47%;
+	margin: 0 1%;
+	margin-bottom: 3%;
+	padding: 10px;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	border-left: 1px solid #0423ff8c;
+	border-right: 1px solid #0423ff8c;
+	border-top: 1px solid #0423ff8c;
+	background: transparent;
+}
+.quote-form form input::placeholder{
+	color: #CCCCCC;
+}
+.quote-form form textarea {
+	width: 97%;
+	margin: 0 1%;
+	margin-bottom: 3%;
+	outline: none;
+	padding: 10px;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	border-left: 1px solid #0423ff8c;
+	border-right: 1px solid #0423ff8c;
+	border-top: 1px solid #0423ff8c;
+	background: transparent;
+}
+.quote-form form textarea::placeholder {
+	color: #CCCCCC;
+}
+.quote-form form input:nth-child(5) {
+	width: 97%;
+	margin: 0 1%;
+	margin-bottom: 3%;
+	outline: none;
+	border-bottom: 1px solid #FFF;
+	border-left: 1px solid #0423ff8c;
+	border-right: 1px solid #0423ff8c;
+	border-top: 1px solid #0423ff8c;
+	background: transparent;
+}
+.quote-form form input[type="submit"] {
+	display: inline-block;
+	width: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    margin-right: 22px;
+    border-radius: 2px;
+    color: #FFF;
+    background: #ed7217;
+    border: 2px solid #ed7217;
+    transition: 0.5s;
+}
+.quote-form form input[type="submit"]:hover {
+	color: #ed7217;
+	background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -583,18 +733,6 @@ a {
 /*--------------------------------------------
             
 ---------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -829,6 +967,21 @@ a {
     .service-area .benefit {
         padding: 20px;
     }
+    /*----Achievement----*/
+    .achievement-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    /*----Insurance Quote----*/
+    .ins-quote-row {
+        display: inherit;
+    }
+    .ins-quote .section-info {
+        width: inherit;
+        text-align: center;
+    }
+
+
+
 
 
 
@@ -921,6 +1074,19 @@ a {
     .service-area .life-ins .save-up .content h5 {
         font-size: 16px;
     }
+    /*----Achievement----*/
+    .achievement-row {
+        grid-template-columns: 1fr;
+    }
+    /*----Insurance Quote ----*/
+    .quote-form form input {
+        width: 98%;
+        margin: 0 1%;
+        margin-bottom: 3%;
+    }
+
+
+
     /*----Footer Top----*/
     .footer-top-row {
         grid-template-columns: 1fr;
