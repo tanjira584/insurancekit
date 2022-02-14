@@ -246,6 +246,58 @@ a {
 	background: #ed7217;
 	border: 2px solid #ed7217;
 }
+/*--------------------------------------------
+            Quick Start Section
+---------------------------------------------*/
+.quick-start {
+	padding-bottom: 0;
+}
+.quick-start-content {
+    display: flex;
+	align-items: center;
+	margin:0 16px;
+	margin-top: -60px;
+	background: #020ec6;
+	border-radius: 20px 20px 20px 20px;
+}
+.quick-start-content .title {
+	width: 56%;
+}
+.quick-start-content .title p {
+	font-weight: bold;
+	color: #FFF;
+	padding: 20px;
+}
+ .quick-form {
+	width: 44%;
+	display: flex;
+	align-items: center;
+}
+.quick-form .ins-type {
+	width: 60%;
+	margin-right: 10px;
+}
+.quick-form .ins-type select{
+	width: 100%;
+	padding: 12px;
+}
+.quick-form .ins-btn {
+	width: 40%;
+	border-radius: 0 20px 20px 0;
+}
+.quick-form .ins-btn a {
+	width: 100%;
+	text-align: center;
+	padding: 50px 0;
+	font-weight: bold;
+	color: #FFF;
+	text-transform: uppercase;
+	background: #ed7217;
+	border: none;
+	outline: none;
+	border-radius: 0 20px 20px 0;
+}
+
 
 
 
@@ -494,6 +546,45 @@ a {
                 media for 768px
 ----------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+
+     /*----Home Section----*/
+     .slide {
+        width: 92%;
+        margin: auto;
+        text-align: center;
+    }
+    /*----Quick Section----*/
+    .quick-start-content {
+        display: inherit;
+    }
+    .quick-start-content .title {
+        width: inherit;
+        text-align: center;
+    }
+    .quick-form {
+        display: inherit;
+        width: inherit;
+    }
+    .quick-form .ins-type {
+        width: inherit;
+        margin-right: 0;
+    }
+    .quick-form .ins-type select {
+        width: 96%;
+        margin: 0 2%;
+        padding: 14px;
+        margin-bottom: 14px;
+    }
+    .quick-form .ins-btn {
+        width: inherit;
+    }
+    .quick-form .ins-btn a {
+        width: 96%;
+        margin: 0 2%;
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 0;
+    }
     
     /*----Footer Top----*/
     .footer-top-row {
@@ -503,12 +594,7 @@ a {
         margin-bottom: 40px;
     }
 
-    /*----Home Section----*/
-    .slide {
-        width: 92%;
-        margin: auto;
-        text-align: center;
-    }
+   
 }
 
 
