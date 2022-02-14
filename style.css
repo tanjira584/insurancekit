@@ -441,11 +441,141 @@ a {
 	background: #ed7217;
     border: 2px solid #ed7217;
 }
+/*--------------------------------------------
+            Service Section
+---------------------------------------------*/
+.service-area {
+	padding: 100px 0;
+	background-color: #11143f;
+	background-image: url('images/p1.png');
+}
+.service-area .section-info h2{
+	color:#FFF;
+}
+.service-type {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.service-type-box {
+	margin: 0 16px;
+	display: flex;
+	border: 1px solid #FFF;
+	margin-bottom: 40px;
+}
+.service-type-box .img {
+	width: 30%;
+	background: #020ec6;
+	
+}
+.service-type-box .img img {
+	width: 100%;
+	height: 100%;
+}
+.service-type-box .title {
+	width: 70%;
+	padding: 10px 20px;
+}
+.service-type-box .title h4 {
+	text-transform: capitalize;
+	font-size: 24px;
+	color: #FFF;
+	line-height: 1.4em;
+}
+.ins-row {
+	display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+	margin: 0 16px;
+	background:#FFF;
+}
+.service-area .service-img {
+	padding: 10px;
+	
+}
+.service-area .service-img img {
+	width: 100%;
+}
+.service-area .life-ins {
+	padding: 10px;
+}
+.service-area .life-ins h3 {
+	font-size: 28px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.service-area .life-ins p {
+	line-height: 1.6em;
+	margin-bottom: 16px;
+}
+.service-area .life-ins .save-up {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+.service-area .life-ins .save-up .icon{
+	width:30%;
+}
+.service-area .life-ins .save-up .icon i {
+	display: inline-block;
+	text-align: center;
+	padding: 10px 15px;
+	font-size: 44px;
+	border-radius: 50%;
+	background: #020ec6;
+	color: #FFF;
+}
 
-
-
-
-
+.service-area .life-ins .save-up .content {
+	margin-left: 10px;
+}
+.service-area .life-ins .save-up .content h5 {
+	font-size: 18px;
+	line-height: 1.4em;
+	color: #ed7217;
+}
+.service-area .benefit {
+	padding: 10px;
+}
+.service-area .benefit h3 {
+	font-size: 28px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.service-area .benefit ul {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.service-area .benefit li {
+	margin-bottom: 14px;
+}
+.service-area .benefit li i {
+	display: inline-block;
+	padding: 4px;
+	font-size: 10px;
+	margin-right: 6px;
+	background: #ed7217;
+	color: #FFF;
+	border-radius: 50%;
+}
+.service-area .benefit a {
+	width: 100%;
+    text-transform: uppercase;
+	text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+    margin-right: 22px;
+    border-radius: 2px;
+    color: #FFF;
+    background: #ed7217;
+    border: 2px solid #ed7217;
+    transition: 0.5s;
+}
+.service-area .benefit a:hover {
+	background: transparent;
+    border: 2px solid #ed7217;
+	color:#ed7217;
+}
 
 
 
@@ -453,8 +583,6 @@ a {
 /*--------------------------------------------
             
 ---------------------------------------------*/
-
-
 
 
 
@@ -678,6 +806,33 @@ a {
         width: 70%;
         margin: auto;
     }
+    /*----Service Section----*/
+    .service-type {
+        grid-template-columns: 1fr 1fr;
+    }
+    .ins-row {
+        grid-template-columns: 1fr;
+    }
+    .service-area .service-img {
+        width: 60%;
+        margin: auto;
+    }
+    .service-area .service-img {
+        padding: 20px;
+    }
+    .service-area .life-ins {
+        padding: 20px;
+    }
+    .service-area .life-ins .save-up .icon {
+        width: 10%;
+    }
+    .service-area .benefit {
+        padding: 20px;
+    }
+
+
+
+
     /*----Footer Top----*/
     .footer-top-row {
         grid-template-columns: 1fr 1fr;
@@ -752,6 +907,19 @@ a {
     .help-box {
         width: inherit;
         margin-bottom: 32px;
+    }
+    /*----Service Section----*/
+    .service-type {
+        grid-template-columns: 1fr;
+    }
+    .service-area .life-ins .save-up .icon {
+       width: inherit;
+    }
+    .service-area .life-ins .save-up .icon i {
+        font-size: 36px;
+    }
+    .service-area .life-ins .save-up .content h5 {
+        font-size: 16px;
     }
     /*----Footer Top----*/
     .footer-top-row {
