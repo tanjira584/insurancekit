@@ -297,6 +297,70 @@ a {
 	outline: none;
 	border-radius: 0 20px 20px 0;
 }
+/*--------------------------------------------
+            Expertise Section
+---------------------------------------------*/
+.expertise-area {
+	padding: 100px 0;
+}
+.expertise-row {
+    display: flex;
+}
+.expertise-content {
+    width: 50%;
+	margin: 0 16px;
+}
+.expertise-content h3 {
+	font-size: 34px;
+	line-height: 1.4em;
+	margin-bottom: 26px;
+}
+.expertise-content h3 span {
+	color: #ed7217;
+}
+.expertise-content .sep {
+	display: inline-block;
+	margin-bottom: 26px;
+}
+.expertise-content h5 {
+	text-transform: capitalize;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.expertise-content .sign {
+	width: 60%;
+}
+
+.expertise-img {
+	position: relative;
+	margin: 0 16px;
+}
+.expertise-img img {
+	width: 100%;
+}
+.expertise-img .employee {
+	position: absolute;
+	bottom: -30px;
+	left: -30px;
+	width: 250px;
+	text-align: center;
+	padding: 30px 10px;
+	background: #ed7217d9;
+	border: 10px solid #FFF;
+	box-shadow: 0px 3px 7px 0px #000;
+}
+.expertise-img .employee h2 {
+	font-size: 50px;
+	color: #FFF;
+	margin-bottom: 8px;
+}
+.expertise-img .employee h5 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFF;
+}
+
 
 
 
@@ -307,8 +371,6 @@ a {
 /*--------------------------------------------
             
 ---------------------------------------------*/
-
-
 
 
 
@@ -518,6 +580,22 @@ a {
     .slide {
         width: 70%;
     }
+    /*----Expertise section----*/
+    .expertise-row {
+        display: inherit;
+    }
+    .expertise-content {
+        width: inherit;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .expertise-content .sign {
+        width: 300px;
+    }
+    .expertise-img {
+        width: 70%;
+        margin: auto;
+    }
     /*----Footer Top----*/
     .footer-top-row {
         grid-template-columns: 1fr 1fr;
@@ -617,7 +695,20 @@ a {
     .slide a:nth-child(1) {
         margin-bottom: 20px;
     }
-
+     /*----Expertise section----*/
+    .expertise-content h3 {
+       font-size: 22px;
+    }
+    .expertise-content h5 {
+        font-size: 18px;
+    }
+    .expertise-content .sign {
+        width: 200px;
+    }
+    .expertise-img {
+        width: 80%;
+        margin: auto;
+    }
 
 
 
