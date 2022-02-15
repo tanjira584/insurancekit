@@ -807,6 +807,75 @@ a {
 	color: #FFF;
 	margin-bottom: 6px;
 }
+/*--------------------------------------------
+            Testimonial Section
+---------------------------------------------*/
+.testimonial {
+	padding: 100px 0;
+	background-image: url('images/p2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.testimonial-row {
+	display: flex;
+}
+.test-box {
+	margin: 0 16px;
+}
+.test-box .test-content {
+	text-align: center;
+}
+.test-box .test-content p {
+	font-size: 22px;
+	line-height: 1.6em;
+	font-style: italic;
+}
+.test-box .test-profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.test-box .test-profile .img {
+	width: 70px;
+	height: 70px;
+}
+.test-box .test-profile .img img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.test-box .test-profile .profile {
+	padding: 20px;
+}
+.test-box .test-profile .profile h5 {
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-bottom: 8px;
+}
+.test-box .test-profile .profile p {
+	text-transform: capitalize;
+	font-size: 18px;
+	font-style: italic;
+	color: #ed7217;
+}
+/*--------------------------------------------
+            Our Partners
+---------------------------------------------*/
+.partner-area {
+	padding: 100px 0;
+}
+.partner-row{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.partner-area .partner {
+	margin: 0 16px;
+	padding: 30px;
+}
+.partner-area .partner img {
+	width: 100%;
+}
 
 
 
@@ -1186,8 +1255,19 @@ a {
     .help-center-row {
         width: 90%;
     }
-
-
+    /*---Testimonial Agent----*/
+    .testimonial-row {
+        display: inherit;
+    }
+    .test-box {
+        margin-bottom: 40px;
+        padding: 0 40px;
+    }
+    /*-----Our Partner----*/
+    .partner-area .partner {
+        margin: 0 16px;
+        padding: 6px;
+    }
 
 
 
@@ -1244,6 +1324,23 @@ a {
     .help-center .helping-box .email h4 {
         font-size: 10px;
     }
+     /*---Testimonial Agent----*/
+    .test-box {
+        padding: 0 10px;
+    }
+     /*-----Our Partner----*/
+     .partner-row {
+         grid-template-columns: 1fr;
+     }
+     .partner-area .partner {
+        width: 50%;
+        margin: auto;
+        padding: 30px;
+    }
+
+
+
+
 
 
 
