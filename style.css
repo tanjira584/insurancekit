@@ -876,29 +876,118 @@ a {
 .partner-area .partner img {
 	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------
-            
+            Blog Area
 ---------------------------------------------*/
+.blog-area {
+	padding: 100px 0;
+	background: #f7f7f7;
+}
+.blog-row {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blog-area .blog {
+	margin: 0 16px;
+	border: 1px solid #787878;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.blog-area .blog .post-img {
+	margin-bottom: 20px;
+}
+.blog-area .blog .post-img img {
+	width: 100%;
+}
+.blog-area .blog .post-meta {
+	padding: 0px 20px;
+	margin-bottom: 20px;
+}
+.blog-area .blog .post-meta h4 {
+	font-size: 20px;
+	line-height: 1.4em;
+	margin-bottom: 8px;
+}
+.blog-area .blog .post-meta span {
+	color: #ed7217;
+	margin-right: 4px;
+}
+.blog-area .blog .post-content {
+	padding: 0 20px;
+	padding-bottom: 20px;
+}
+.blog-area .blog .post-content p {
+	line-height: 1.6em;
+	margin-bottom: 20px;
+}
 
-
-
-
-
-
-
+.blog-area .blog .post-content a {
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	color: #ed7217;
+}
+/*--------------------------------------------
+            Download App
+---------------------------------------------*/
+.download-app {
+	background: #ed7217;
+}
+.download-row {
+	display: flex;
+}
+.download-app .section-info {
+    width: 50%;
+	text-align: left;
+	padding: 100px 0;
+	margin-bottom: 0;
+}
+.download-app .section-info h2 {
+	color: #FFF;
+	margin-bottom: 30px;
+}
+.download-app .section-info img {
+	margin-bottom: 30px;
+}
+.download-app .section-info ul {
+	list-style: none;
+	margin-bottom: 30px;
+}
+.download-app .section-info ul li {
+	margin-bottom: 12px;
+	color: #FFF;
+}
+.download-app .section-info ul li i {
+	color: #FFF;
+	margin-right: 8px;
+	font-size: 14px;
+}
+.download-app .app-btn {
+	display: flex;
+	align-items: center;
+	
+}
+.download-app .app-btn a {
+	display: inline;
+	width: 40%;
+}
+.download-app .app-btn a img {
+	width: 100%;
+	margin-bottom: 0;
+}
+.mobile-img {
+    position: relative;
+	width: 50%;
+    padding: 0 16px;
+}
+.mobile-img img {
+    position: absolute;
+	width: 70%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
 
 /*--------------------------------------------
             Site Identity
@@ -1145,7 +1234,13 @@ a {
     .help-center-row {
         width: 70%;
     }
-
+    /*---Blog Section---*/
+    .blog-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog-area .blog:not(:last-of-type) {
+        margin-bottom: 32px;
+    }
 
 
 
@@ -1268,7 +1363,24 @@ a {
         margin: 0 16px;
         padding: 6px;
     }
-
+    /*----App Download----*/
+    .download-row {
+        display: inherit;
+    }
+    .download-app .section-info {
+        width: inherit;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .download-app .app-btn {
+        justify-content: center;
+    }
+    .mobile-img {
+        margin: auto;
+    }
+    .mobile-img  img{
+        position: inherit;
+    }
 
 
     /*----Footer Top----*/
@@ -1337,8 +1449,17 @@ a {
         margin: auto;
         padding: 30px;
     }
-
-
+    /*---Blog Section---*/
+    .blog-row {
+        grid-template-columns: 1fr;
+    }
+    /*----Download App----*/
+    .download-app .section-info h2 {
+        font-size: 28px;
+     }
+     .mobile-img {
+         width: 80%;
+     }
 
 
 
