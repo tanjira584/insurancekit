@@ -1091,7 +1091,6 @@ a {
 	padding: 8px 0;
 	color: #FFF;
 }
-
 /*--------------------------------------------
             Secondary Footer
 ---------------------------------------------*/
@@ -1116,9 +1115,6 @@ a {
 .copy-right p i {
 	color: red;
 }
-
-
-
 /*---------------------------------------------------------------
                 media for 1024px
 ----------------------------------------------------------------*/
@@ -1241,10 +1237,6 @@ a {
     .blog-area .blog:not(:last-of-type) {
         margin-bottom: 32px;
     }
-
-
-
-
     /*----Footer Top----*/
     .footer-top-row {
         grid-template-columns: 1fr 1fr;
@@ -1265,10 +1257,6 @@ a {
     }
 
 }
-
-
-
-
 /*---------------------------------------------------------------
                 media for 768px
 ----------------------------------------------------------------*/
@@ -1381,8 +1369,6 @@ a {
     .mobile-img  img{
         position: inherit;
     }
-
-
     /*----Footer Top----*/
     .footer-top-row {
         grid-template-columns: 1fr;
@@ -1390,8 +1376,6 @@ a {
     .company-list {
         margin-bottom: 40px;
     }
-
-   
 }
 
 
@@ -1399,7 +1383,9 @@ a {
                 media for 540px
 ----------------------------------------------------------------*/
 @media screen and (max-width: 540px) {
-
+    .section-info h2 {
+        font-size: 28px;
+    }
     /*----Home Section----*/
     .slide {
         width: inherit;
@@ -1460,11 +1446,6 @@ a {
      .mobile-img {
          width: 80%;
      }
-
-
-
-
-
     /*----Site Identity------*/
     .site-identity-row {
         display: inherit;
